@@ -1,0 +1,28 @@
+#submitbutton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#newupdatebutton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input{
+    margin: 10px;
+}
+#sortbutton{
+    display: none;
+}
+#nameswithcommas{
+    border: 1px solid turquoise;
+    background-color: orange;
+    padding: 10px ;
+    border-radius: 10px;
+    width: 50%;
+}
+#nameswithoutcommas{
+    border: 1px solid rgb(224, 64, 64);
+    background-color: rgba(0, 255, 76, 0.363);
+    padding: 10px ;
+    border-radius: 10px;
+    width: 50%;
+}
