@@ -4,33 +4,32 @@
 <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
-<body>
-    <center>
-        <h1> List of the students in my class. </h1>  
-        <div>
-            <span>1</span>
-            <input type="text" id="name1" placeholder="Name of Student 1">
-            <br>
-            <span>2</span>
-            <input type="text" id="name2" placeholder="Name of Student 2">
-            <br>
-            <span>3</span>
-            <input type="text" id ="name3" placeholder="Name of Student 3">
-            <br>
-            <span>4</span>
-            <input type="text" id="name4" placeholder="Name of Student 4">
-            <br>
-        </div>
-        <button id="submitbutton" onclick="submit()"> Submit </button>
-        <br>
-        <div id="nameswithcommas">
-      
-        </div>
-        <div id="nameswithoutcommas">
-      
-        </div>
-        <button id="sortbutton" onclick="sort()"> Sort </button>
-        <button id="newupdatebutton" onclick="update()"> Update </button>
-      </center>
+<body style="text-align: center;">
+ <h1>Guest List</h1> 
+ <input type="text" placeholder="Enter Name" id="enter_name">
+ <button onclick="Submit()" id="submit_button"> Submit </button>
+ <hr>
+ <div id="display_names">
+      </div>
+      <hr>
+     <button onclick="Showlist()" > Show </button>
+     <div id="showNames">
+
+     </div>
+     <hr>
+     <hr>
+     <button onclick="sortButton()"> Sort The Names </button>
+     <div id="sortNames">
+
+     </div>
+     <hr>
+     <hr>
+     <input type="text" placeholder="Search Name" id="Search Name">
+     <button onclick="Search()"> Search </button>
+     <div id="search_names">
+
+     </div>
+     
+
 </body>
 </html>

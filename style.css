@@ -1,28 +1,24 @@
-#submitbutton{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-#newupdatebutton{
-    margin-top: 20px;
-    margin-bottom: 20px;
+h1{
+    margin-bottom: 30px;
+    color: rgb(175, 186, 238);
+    text-decoration: red;
 }
 input{
-    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    background-color: rgba(97, 225, 65, 0.747);
+    border: solid;
+    font-weight: bold;
 }
-#sortbutton{
-    display: none;
+button{
+    margin-bottom: 20px;
+    background-color: seashell;
+    font-weight: bold;
 }
-#nameswithcommas{
-    border: 1px solid turquoise;
-    background-color: orange;
-    padding: 10px ;
-    border-radius: 10px;
-    width: 50%;
+hr{
+    margin-bottom: 15px;
 }
-#nameswithoutcommas{
-    border: 1px solid rgb(224, 64, 64);
-    background-color: rgba(0, 255, 76, 0.363);
-    padding: 10px ;
-    border-radius: 10px;
-    width: 50%;
+body{
+    background-color: springgreen;
 }

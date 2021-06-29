@@ -1,36 +1,35 @@
 var students = []
 var displayArray = []
 
-function submit() {
-    for (var i = 1; i <= 4; i++) {
-        var name = document.getElementById("name" + i).value;
-        students.push(name)
-
-    }
-
-    var length = students.length
-    for (var a = 0; a < length; a++) {
-        displayArray.push("<h4>name-" + students[a] + "</h4>")
-    }
-    var removecomma = displayArray.join(" ")
-    document.getElementById("nameswithcommas").innerHTML = displayArray
-    document.getElementById("nameswithoutcommas").innerHTML = removecomma
-    document.getElementById("submitbutton").style.display = "none"
-    document.getElementById("sortbutton").style.display = "inline-block"
+var Name_of_the_Guest_Array=[];
+function Submit(){
+    var Guest_Name= document.getElementById("Enter_Name").value;
+    Name_of_the_Guest_Array.push(Guest_Name);
+    document.getElementById("Display_names").innerHTML=Name_of_the_Guest_Array;
+    console.log(Name_of_the_Guest_Array);
+    var length_of_the_array=Name_of_the_Guest_Array.length;
+    console.log(length_of_the_array);
 }
-function sort() {
-    students.sort();
-    var length = students.length
-    var displayArraysorted=[]
-    for (var a = 0; a < length; a++) {
-        displayArraysorted.push("<h4>name-" + students[a] + "</h4>")
-
-    }
-    console.log (displayArraysorted)
-    var removecomma = displayArraysorted.join(" ")
-    document.getElementById("nameswithcommas").innerHTML = displayArraysorted
-    document.getElementById("nameswithoutcommas").innerHTML = removecomma
+function ShowList(){
+    var i=Name_of_the_Guest_Array.join ("<br>");
+    console.log(Name_of_the_Guest_Array);
+    document.getElementById("showNames").innerHTML=i.toString;
 }
-function update(){
-    document.getElementById("nameswithoutcommas").innerHTML="<h1>"+students+"</h1>"
+function sortButton(){
+    Name_of_the_Guest_Array.sort();
+var i=Name_of_the_Guest_Array.join("<br>")
+console.log (Name_of_the_Guest_Array);
+document.getElementById("Sorted_names").innerHTML]=i.toString;
+}
+function.Search(){
+    var s = document.getElementById("Search_Name").value;
+    var found=0;
+    var j;
+    for (j=0; j<Name_of_the_Guest_Array.length; j++){
+        if(s==Name_of_the_Guest_Array[j]){
+            found=found+1;
+        }
+    }
+    document.getElementById("Search_Names").innerHTML="Name Found"+found+"Time/s"
+    console.log("Found Name"+found+"Time/s")
 }
